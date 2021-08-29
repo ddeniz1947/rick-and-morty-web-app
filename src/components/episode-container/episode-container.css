@@ -1,0 +1,29 @@
+.detailCardContainer{
+    margin-top: 30px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,150px);
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 50px 30px;
+    margin-bottom: 30px;
+}
+
+.card{
+    box-shadow: 2px 2px 2px 2px rgb(180,227,253);
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    border: 1px solid rgb(180,227,253);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card:hover{
+    transform: scale(1.2); 
+    transition: transform 0.3s linear;
+}

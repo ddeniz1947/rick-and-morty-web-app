@@ -1,0 +1,102 @@
+.episodeDetailContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.episodeDetailFirstRow{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.episodeDetailFirstRow > p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.episodeDetailFirstRow > input {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-color: rgb(180,227,253);
+    border-style: solid;
+}
+
+.episodeDetailFirstRow > input:focus-visible {
+  outline: none !important;
+  border-color: rgb(180,227,253);
+  box-shadow: 0 0 10px rgb(180,227,253);
+}
+
+.episodeDetailFirstRow p:nth-child(1){
+  font-size: 20px;
+}
+
+.charactersContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    
+}
+.charactersGridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20%);
+}
+
+.charactersTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+
+.charactersTable  th {
+  position: relative;
+}
+@media screen and (max-width:900px){
+  .charactersTable{
+    width: 99%;
+  }
+}
+  @media screen and (max-width:640px) {
+    .charactersTable {
+          font-size: 3vw;
+      }
+  }
+  
+  @media screen and (max-width:300px) {
+    .charactersTable {
+        font-size: 2vw;
+    }
+    }
+    .charactersTable > td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .charactersTable > tr:nth-child(even) {
+    background-color: rgb(180,227,253);
+  }
+
+  ul {
+      padding: 0;
+  }
+
+  
+  .sortable{
+    cursor: pointer;
+  }
+
+  .characterLink > a:hover{
+    box-shadow: inset 0 -3px 0 rgb(180,227,253);
+  }
+
